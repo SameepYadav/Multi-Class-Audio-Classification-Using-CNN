@@ -20,9 +20,6 @@ Given dataset contains total of 9,914 audio sample, where 3,300 belongs to Bee, 
 Audio dataset given has very high frame rate, on an average every file had 80,000 frames (amplitude/sec). With frames/sec being so high we have a lot of data and it needs some preprocessing. Reduction of audio frame rate and length was performed using [interpolation technique](https://scikit-learn.org/stable/auto_examples/linear_model/plot_polynomial_interpolation.html). The audio sample was reduced to 15k sample and total length of 22,000 (approximately 1/4 reduction of the given audio).
 
 
-![alt text](https://raw.githubusercontent.com/vishalshar/Audio-Classification-using-CNN-MLP/master/img/audio_preprocessing-1.png)
-
-
 
 
 ### Using ANN
@@ -33,7 +30,6 @@ During initial experiments ANN was not performing good and later after several e
 #### Core Idea: 
 Sample Bee Audio and expected feature extraction using pooling layers and merging fully connected layers
 
-![alt text](https://raw.githubusercontent.com/vishalshar/Audio-Classification-using-CNN-MLP/master/img/audio_graph-1.png)
 
 
 #### Performance: 
@@ -44,12 +40,8 @@ Training was done for 500 epochs using Adaptive Moment Estimation (adam) as opti
 |-----| ------------- |:-------------:|
 |Accuracy   | 91.11%      | 88.25%       |
 
-![alt text](https://raw.githubusercontent.com/vishalshar/Audio-Classification-using-CNN-MLP/master/img/ANN_Net_2-1.png)
 
 
-#### Accuracy
-
-![alt text](https://raw.githubusercontent.com/vishalshar/Audio-Classification-using-CNN-MLP/master/img/bee_ann_audio.png)
 
 
 
@@ -59,7 +51,7 @@ A network using Convolution layers was used to build classifier, network archite
 data model was not able to generalize well between bee and noise data. Adding downsampling technique helped the
 model in generalization.
 
-![alt text](https://raw.githubusercontent.com/vishalshar/Audio-Classification-using-CNN-MLP/master/img/CNN_Net-1_compress.png)
+![alt text]
 
 #### Performance: 
 
@@ -69,11 +61,6 @@ Training was done for 500 epochs using Adaptive Moment Estimation (adam) as opti
 |            | Training           | Testing        |
 |-----| ------------- |:-------------:|
 |Accuracy   | 99.88%      | 99.45%       |
-
-#### Accuracy
-
-![alt text](https://raw.githubusercontent.com/vishalshar/Audio-Classification-using-CNN-MLP/master/img/bee_cnn_audio.png)
-[![HitCount](http://hits.dwyl.com/vishalshar/awesome_ML_AI_RSS_feed.svg)](http://hits.dwyl.com/vishalshar/awesome_ML_AI_RSS_feed)
 
 
 ```
